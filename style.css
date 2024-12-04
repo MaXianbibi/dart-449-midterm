@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
   background-image: url(Rectangle.svg);
 }
 
@@ -9,6 +10,14 @@ body {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.mt-200 {
+  margin-top: 200px;
+}
+
+.h-1-2 {
+  height: 73%;
 }
 
 .justify-center {
@@ -35,17 +44,29 @@ body {
   width: 100%;
 }
 
+.w-screen {
+  width: 100svw;
+}
+
+
+
 .h-full {
   height: 100%;
+}
+
+.items-end {
+  align-items: end;
+}
+
+.padding-small {
+  padding: 10px;
 }
 
 .text-center {
   text-align: center;
 }
 
-.h-9-12 {
-  height: 85%;
-}
+
 /*fonts*/
 
 .regrets-major {
@@ -91,7 +112,6 @@ body {
 
 .text-lg {
   font-size: 5rem; /* 18px */
-  line-height: 1.75rem; /* 28px */
 }
 
 .text-xl {
@@ -108,4 +128,42 @@ body {
 
 .purple-gradient{
     background: linear-gradient(90deg, #5a3fba, #d86f9b);
+}
+
+.footer-landing-page {
+  justify-self:end;
+}
+
+header {
+  position: absolute;
+  top: 2%;
+}
+
+#landing-page {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 100px;
+  grid-template-areas: 
+  "landing-main"
+  "landing-footer"
+}
+
+#service-page {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h2 {
+  margin: 0;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+#service-page > div {
+ margin-left: 5vw;
 }
